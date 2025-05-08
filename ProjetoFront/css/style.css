@@ -1,0 +1,112 @@
+
+/*  #59BDE8 --> CORPO DA PÁGINA 
+    #0CE899 --> COR DAS LETRAS
+    #0C1BE8 --> CONTRASTE DAS LETRAS / NEGRITO
+
+*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #59BDE8;
+    
+}
+#conteudo_da_pagina_toda{
+    width: 100%;
+}
+
+header{
+    display: block;
+    
+    background-color: #086F9C;
+    justify-content: center;
+    
+    height: 55px;
+    width: 100%;
+}
+.logo{
+    margin-left: 10%;
+    float: left;
+}
+.logo img{
+    
+    width: 55px;
+    
+}
+.titulo a{
+
+    text-decoration: none;
+    padding-top: 0px;
+    margin-left: 23%;
+    font-size: 50px ;
+    float: left;
+    
+    text-align: center;
+    color: #2DA84E;
+}
+
+main{
+    
+    margin-top: 2%;
+    
+    display:flex;
+    
+    flex-direction: column;
+    
+    color: #ffffff;
+}
+
+#tituloMain{
+    display: flex;
+    justify-content: center
+}
+
+.botoes{
+    
+    width: 50%;
+    
+    border-radius: 15px;
+    
+    background-color: #1F3BDB ;
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;
+    
+    text-align: center;
+    
+    border: 2px solid black;
+    
+    color: white;
+    
+    margin: 1% 23%;
+    
+    padding: 1%;
+    
+    text-decoration: none;
+    
+    font-size: 15px;
+}
+
+footer{
+    
+    align-items: end;
+    background-color: #086F9C;
+    justify-content: center;
+    color: rgb(53, 157, 249);
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    color: #0CE899;
+}
+.rodape{
+    font-size: 10px;
+}
