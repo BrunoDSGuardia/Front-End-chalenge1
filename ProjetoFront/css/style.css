@@ -16,42 +16,35 @@ body{
     height: 500px;
     background-color: #59BDE8;
 
-
 }
 #conteudo_da_pagina_toda{
     width: 100%;
+
 }
 
 header{
     display: block;
-
     background-color: #086F9C;
-
     justify-content: center;
-
     height: 85px;
-
     width: 100vw;
+
 }
 .logo{
-    margin-left: 10%;
+    margin-left: 8%;
     float: left;
+
 }
 .logo img{
-
     width: 75px;
-
 }
 .titulo a{
-
     text-decoration: none;
     padding-top: 0px;
-    margin-left: 27%;
+    margin-left: 26%;
     font-size: 70px ;
-    float: left;
-
-    text-align: center;
     color: #2DA84E;
+    
 }
 nav{
     display: block;
@@ -102,6 +95,7 @@ main{
 
     color: #ffffff;
 
+    padding-bottom: 3%;
 
 }
 
@@ -109,8 +103,8 @@ main{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    margin-bottom:5%;
-    margin-top: 4%;
+    margin-bottom:3%;
+    margin-top: 2%;
 
 }
 
@@ -221,12 +215,11 @@ footer{
     justify-content: center;
     color: rgb(53, 157, 249);
     height: 4%;
-    width: 99vw;
+    width: 100vw;
 
     color: #000000;
 }
 .rodape{
-    padding-top: 2px;
     display: flex;
     text-align: center;
     justify-content: column;
