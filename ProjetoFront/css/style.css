@@ -163,9 +163,23 @@ main{
     background-color: #1F3BDB;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
     font-size: 20px;
 }
+.integrante{
+    padding-left: 5%;
+}
+.integrantes img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.integrantes p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 
 footer{
    
