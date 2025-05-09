@@ -1,5 +1,5 @@
 
-/*  #59BDE8 --> CORPO DA PÁGINA 
+/*  #59BDE8 --> CORPO DA PÁGINA
     #0CE899 --> COR DAS LETRAS
     #0C1BE8 --> CONTRASTE DAS LETRAS / NEGRITO
 
@@ -8,15 +8,15 @@
     margin: 0%;
     padding: 0%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+
 }
 
 body{
     box-sizing: border-box;
     height: 500px;
     background-color: #59BDE8;
-    
-    
+
+
 }
 #conteudo_da_pagina_toda{
     width: 100%;
@@ -24,13 +24,13 @@ body{
 
 header{
     display: block;
-    
+
     background-color: #086F9C;
-    
+
     justify-content: center;
-    
+
     height: 85px;
-    
+
     width: 100vw;
 }
 .logo{
@@ -38,9 +38,9 @@ header{
     float: left;
 }
 .logo img{
-    
+
     width: 75px;
-    
+
 }
 .titulo a{
 
@@ -49,19 +49,19 @@ header{
     margin-left: 27%;
     font-size: 70px ;
     float: left;
-    
+
     text-align: center;
     color: #2DA84E;
 }
 nav{
     display: block;
-    
+
     background-color: #0480a2;
-    
+
     justify-content:center;
-    
+
     height: 30px;
-    
+
     width: 100vw;
 }
 nav ul{
@@ -77,7 +77,7 @@ nav li{
     display: flex;
     list-style: none;
     margin-left: 4px;
-    
+
 }
 
 nav a{
@@ -93,16 +93,16 @@ nav a:hover{
 
 
 main{
-    
-    margin-top: 2%;
-    
+
+
+
     display:flex;
-    
+
     flex-direction: column;
-    
+
     color: #ffffff;
-    
-    
+
+
 }
 
 #tituloMain{
@@ -110,13 +110,13 @@ main{
     display: flex;
     justify-content: center;
     margin-bottom:5%;
-    margin-top: 2%;
-    
+    margin-top: 4%;
+
 }
 
 
 .botoes:hover{
-    
+
     transition: 0.3s;
     background-color: #3d5aff ;
     color: #00ff22;
@@ -126,73 +126,103 @@ main{
 .botoes{
     transition: 0.3s;
     width: 50%;
-    
+
     border-radius: 15px;
-    
+
     background-color: #1F3BDB ;
-    
+
     display: flex;
-    
+
     flex-direction: column;
-    
+
     align-items: center;
-    
+
     text-align: center;
-    
+
     border: 2px solid black;
-    
+
     color: white;
-    
+
     margin: 1% 23%;
-    
+
     padding: 1%;
-    
+
     text-decoration: none;
-    
+
     font-size: 30px;
 }
 
 #titulointegrantes{
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    font-size: 30px;
+
+    margin-top: 1%;
 }
 
 .integrantes{
-    background-color: #1F3BDB;
+    margin-top: 2%;
+    width: 100%;
+    height: 500px;
+    background-color: #4b6ae5;
     display: flex;
     justify-content: center;
+
     font-size: 20px;
-}
-.integrante{
-    padding-left: 5%;
-}
-.integrantes img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+
 }
 
-.integrantes p{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.integrante{
+    border: solid 5px #000000;
+    margin-left: 50px;
+    width: 20%;
+    background-color: #3f0684;
+    border-radius: 50px;
+
+
+
 }
+.integrantes img{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+    margin-top: 10px;
+    width: 290px;
+    height: 290px;
+    border-radius: 50px;
+}
+.integrantes p{
+
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.integrante h2{
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
 
 
 footer{
-   
+
     bottom: 0;
     position: fixed;
     display: flex;
-    
+
     background-color: #086F9C;
     justify-content: center;
     color: rgb(53, 157, 249);
     height: 4%;
     width: 99vw;
-    
+
     color: #000000;
 }
 .rodape{
@@ -200,6 +230,6 @@ footer{
     display: flex;
     text-align: center;
     justify-content: column;
-    
+
     font-size: 11px;
 }
