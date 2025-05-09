@@ -13,8 +13,9 @@
 
 body{
     box-sizing: border-box;
-    height: 100vh;
+    height: 500px;
     background-color: #59BDE8;
+    
     
 }
 #conteudo_da_pagina_toda{
@@ -28,7 +29,7 @@ header{
     
     justify-content: center;
     
-    height: 55px;
+    height: 50px;
     
     width: 100%;
 }
@@ -38,20 +39,59 @@ header{
 }
 .logo img{
     
-    width: 55px;
+    width: 45px;
     
 }
 .titulo a{
 
     text-decoration: none;
     padding-top: 0px;
-    margin-left: 23%;
-    font-size: 50px ;
+    margin-left: 26%;
+    font-size: 43px ;
     float: left;
     
     text-align: center;
     color: #2DA84E;
 }
+nav{
+    display: block;
+    
+    background-color: #0480a2;
+    
+    justify-content:center;
+    
+    height: 25px;
+    
+    width: 100%;
+}
+nav ul{
+    margin-left: 29%;
+    float: left;
+    display: flex;
+    list-style: none;
+    margin-top: 1px;
+    align-self: center;
+}
+nav li{
+    
+    float: left;
+    display: flex;
+    list-style: none;
+    margin-left: 4px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #e4e4e4;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: #0CE899;
+    transition: 0.5s;
+}
+
+
 
 main{
     
@@ -62,26 +102,30 @@ main{
     flex-direction: column;
     
     color: #ffffff;
+    
+    
 }
 
 #tituloMain{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    margin-bottom:7%;
+    margin-bottom:5%;
     margin-top: 2%;
     
 }
 
+
 .botoes:hover{
     
-    
-    background-color: #000000
+    transition: 0.5s;
+    background-color: #3d5aff ;
+    color: #00ff22;
 
 
 }
 .botoes{
-    
+    transition: 0.5s;
     width: 50%;
     
     border-radius: 15px;
@@ -110,6 +154,7 @@ main{
 }
 
 footer{
+   
     bottom: 0;
     position: fixed;
     display: flex;
@@ -117,7 +162,7 @@ footer{
     background-color: #086F9C;
     justify-content: center;
     color: rgb(53, 157, 249);
-    height: 5%;
+    height: 6%;
     width: 100%;
     
     color: #0CE899;
