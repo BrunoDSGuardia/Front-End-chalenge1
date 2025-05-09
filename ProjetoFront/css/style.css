@@ -233,3 +233,33 @@ footer{
 
     font-size: 11px;
 }
+
+
+
+/*  ---------------------- PAGINA FAQ -------------------*/
+
+#corpo_pagina_faq{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perguntas{
+    width: 50%;
+}
+.detalhes_perguntas{
+    background-color: #1F3BDB;
+    padding: 1%;
+    border: 2px solid black;
+    margin: 1%;
+}
+.paragrafo_faq{
+    background-color: #0CE899;
+    background-color: #1F3BDB;
+    padding: 1%;
+    
+    margin: 1%;
+}
+
