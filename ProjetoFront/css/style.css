@@ -219,7 +219,7 @@ main{
 .integrante h2{
     font-weight: 100;
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     color: #ffffff;
 }
@@ -233,13 +233,12 @@ main{
 footer{
 
     bottom: 0;
-    position: fixed;
     display: flex;
-
+    
     background-color: #086F9C;
     justify-content: center;
     color: rgb(53, 157, 249);
-    height: 4%;
+    height: 5%;
     width: 100%;
 
     color: #000000;
