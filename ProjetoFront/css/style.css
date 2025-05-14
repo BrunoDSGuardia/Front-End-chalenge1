@@ -95,6 +95,7 @@ nav a:hover{
 /*           PÁGINA PRINCIPAL           */
 /****************************************/
 
+
 main{
     display:flex;
     flex-direction: column;
@@ -199,8 +200,6 @@ main{
 }
 
 
-
-
 /*************************************/
 /*           PÁGINA DE FAQ           */
 /*************************************/
@@ -240,38 +239,54 @@ main{
 /*           PÁGINA DE CONTATO            */
 /*****************************************/
 
+
 .container-formulario-geral{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 1000px;
+    height: 80%;
 }
 
 .tituloContato{
     font-size: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 .container-formulario{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    width:  190px;
+    margin-top: 1%;
+    width:  700px;
     height: 300px;
 }
 
 .container-formulario fieldset{
-    
     background-color: #1F3BDB;
     border: 4px solid black;
     padding: 2%;
-    width: 50%;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* funciona em vertical também */
+    gap: 10px;
+    
 }
+
+.msg-form {
+    display: flex;
+    
+}
+
+.msg-form textarea{
+    width: 130px;
+    height: 20px;
+}
+
 /******************************/
 /*           FOOTER           */
 /******************************/
