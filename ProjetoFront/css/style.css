@@ -490,6 +490,26 @@ button:hover {
     cursor: pointer;
 }
 
+/*******************************/
+/*      Página do Projeto      */
+/*******************************/
+
+#section-projeto{
+    width: 100%;
+    padding-top: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+#section-projeto h2{
+    padding-bottom: 7px;
+}
+
+#section-projeto p{
+    justify-self: center;
+    width:fit-content;
+}
+
 
 /******************************/
 /*           FOOTER           */
