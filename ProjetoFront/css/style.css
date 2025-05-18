@@ -37,7 +37,7 @@ body{
 
 header{
     display: block;
-    background-color: #0089ab;
+    background-color: #0093b8;
     justify-content: center;
     height: 85px;
     width: 100%;
@@ -53,12 +53,12 @@ header{
 
 #logo img{
     width: 75px;
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 #logo img:hover{
     filter:contrast(2);
-    transition: 0.3s;
+    transition: 0.8s;
 
 }
 
@@ -67,13 +67,13 @@ header{
     text-decoration: none;
     margin-left: 29%;
     font-size: 70px;
-    color: #2dc455;
-    transition: 0.3s;
+    color: #0ed844;
+    transition: 0.8s;
 }
 
 #titulo a:hover{
-    filter:contrast(2);
-    transition: 0.3s;
+    filter:contrast(2.5);
+    transition: 0.8s;
 
 }
     
@@ -95,11 +95,11 @@ header button{
 }
 
 header button:hover{
-    border-color: #79ffce;
+    border-color: #fdff79;
 
 }
 
-#menucores{
+#menuCores{
     margin-left: 100px;
 }
 #botaoCor{
@@ -132,7 +132,7 @@ header button:hover{
 
 nav{
     display: block;
-    background-color: #0480a2;
+    background-color: #007694;
     justify-content:center;
     height: 30px;
     min-height: 30px;
@@ -191,7 +191,7 @@ nav a:hover{
     background-size: cover;
     width: 50%;
     height: 100%;
-    filter: drop-shadow(25px 20px 15px #000);
+    filter: drop-shadow(2px 20px 15px #333f46);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -210,7 +210,7 @@ nav a:hover{
     background-size: cover;
     width: 50%;
     height: 100%;
-    filter: drop-shadow(25px 20px 15px #362d2d);;
+    filter: drop-shadow(15px 20px 15px #0c0d0d);;
     transition: .2s;
     align-items: center;
     justify-content: center;
@@ -313,21 +313,22 @@ nav a:hover{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 1%;
+    margin-top: 1%;
+
 }
 
 .integrantes{
-    margin: 2% 0 2% 0;
-    padding: 2% 0 2% 0;
-    width: 100%;
+    margin: 2% auto;
+    padding: 1% 0;
+    width: 80%;
     height: 550px;
-    background-color: #4b6ae5;
+    background-color: #ffffff20;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 20px;
     border-radius: 50px;
-
+    border: solid 5px #000000a2;
 }
 
 .integrante{
@@ -340,12 +341,10 @@ nav a:hover{
     align-content: center;
 }
 
-.integrante:first-of-type {
-    margin-left: 0px;
-}
 
 .integrantes img{
 
+    border: solid 5px #000000a2;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -383,7 +382,7 @@ nav a:hover{
     margin: 10px;
     background-color: #ffffff;
     transition: 0.3s;
-    border: solid 2px #000000;
+    border: solid 5px #000000;
 }
 
 #iconLinkedin:hover{
@@ -391,9 +390,11 @@ nav a:hover{
     width: 60px;
     height: 60px;
     margin: 10px;
-    background-color: #4c00ff;
+    background-color: #abe3ff;
     filter: brightness(1.2);
     transition: 0.3s;
+    scale: 1.2;
+    
 }
 
 #iconGithub{
@@ -403,18 +404,21 @@ nav a:hover{
     height: 60px;
     margin: 10px;
     background-color:  #ffffff;
-    filter: saturate(3);
     transition: 0.3s;
-    border: solid 3px #000000;
+    border-color: rgb(255, 255, 255);
+    
 }
+
+
 
 #iconGithub:hover{
     float: left;
     width: 60px;
     height: 60px;
     margin: 10px;
-    background-color: #290dff;
-    filter: brightness(1.2);
+    background-color: #bebebe;
+    filter: brightness(0.8);
+    scale: 1.2;
     transition: 0.3s;
 }
 
@@ -435,17 +439,23 @@ nav a:hover{
 
 .titulo_faq {
     padding-bottom: 3%;
+    font-size: 5vh;
 }
 
 .perguntas{
     width: 50%;
+    display: grid;
+
+    gap: 20px;
+    transition: 0.5s;
 }
 
 .detalhes_perguntas{
-    background-color: #1F3BDB;
-    padding: 7px;
+    background-color: #8457ff79;
+    padding: 10px;
     border: 2px solid black;
     margin: 7px;
+    transition: 0.5s;
 }
 
 .paragrafo_faq{
@@ -453,6 +463,7 @@ nav a:hover{
     background-color: #1F3BDB;
     padding: 1%;
     margin: 1%;
+    transition: 0.5s;
 }
 
 
