@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let botaoAzulClaro = document.getElementById("botaoCor5");
 
 
-    toggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    });
-
-    // Recupera a cor de fundo armazenada e aplica
     let corSalva = localStorage.getItem("corDeFundo");
     if (corSalva) {
         body.style.backgroundColor = corSalva;
@@ -72,6 +67,39 @@ document.querySelectorAll(".toggle").forEach((summary) => {
     });
 });
 
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const assunto = document.getElementById("assunto");
+const mensagem = document.getElementById("mensagem");
+const formulario = document.getElementById("formulario");
+const erro = document.getElementById("erro");
 
-
-
+formulario.addEventListener('submit', (e) => {
+    let mensagem = [];
+    
+    if (nome.value === "" || nome.value === null) {
+        mensagem.push("\nInsira seu nome");
+    }
+    const partesNome = nome.value.trim().split(" ");
+    if (partesNome.length < 2 || nome.length === 1) {
+        mensagem.push("\nAdicione um sobrenome");
+    }
+    if (email.value === "" || email.value === null) {
+        mensagem.push("\nInsira seu email");
+    }
+    if (assunto.value === "" || assunto.value === null) {
+        mensagem.push("\nInsira o assunto da mensagem");
+    }
+    if (mensagemFormulario.value === "" || mensagemFormulario.value === null) {
+        mensagem.push("\nInsira sua mensagem");
+    }
+    if (mensagem.length > 0) {
+        e.preventDefault();
+        alert(mensagem.join());
+    } else {
+        e.preventDefault();
+        alert("Mensagem enviada com sucesso!");
+        formulario.reset();
+    }
+    
+})
