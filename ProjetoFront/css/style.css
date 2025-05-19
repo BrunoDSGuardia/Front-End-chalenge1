@@ -76,13 +76,16 @@ header{
     transition: 0.8s;
 
 }
-    
-main{
-    display:flex;
-    flex-direction: column;
-    color: #ffffff;
 
+.menu-toggle {
+    display: none;
+    float: right;
+    margin-top: 7px;
+    margin-right: 40px;
+    font-size: 50px;
+    cursor: pointer;
 }
+    
 
 header button{
     margin-top: 30px;
@@ -96,7 +99,7 @@ header button{
 
 header button:hover{
     border-color: #fdff79;
-
+    
 }
 
 #menuCores{
@@ -124,6 +127,12 @@ header button:hover{
     transition: 0.3s;
 }
 
+main{
+    display:flex;
+    flex-direction: column;
+    color: #ffffff;
+
+}
 
 /******************************/
 /*           NAVBAR           */
@@ -208,7 +217,6 @@ nav a:hover{
 #info:hover {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
     background-size: cover;
-    width: 50%;
     height: 100%;
     filter: drop-shadow(15px 20px 15px #0c0d0d);;
     transition: .2s;
@@ -227,7 +235,6 @@ nav a:hover{
         margin-top: 50vh;
         scale: 1.2;
     }
-    float: none;
 }
 
 

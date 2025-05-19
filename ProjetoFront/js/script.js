@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     let body = document.body;
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menuCores');
     let botaoPreto = document.getElementById("botaoCor");
     let botaoCinza = document.getElementById("botaoCor2");
     let botaoCinzaClaro = document.getElementById("botaoCor3");
     let botaoAzul = document.getElementById("botaoCor4");
     let botaoAzulClaro = document.getElementById("botaoCor5");
+
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
 
     // Recupera a cor de fundo armazenada e aplica
     let corSalva = localStorage.getItem("corDeFundo");
