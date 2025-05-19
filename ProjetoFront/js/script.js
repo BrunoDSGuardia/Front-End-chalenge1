@@ -11,25 +11,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     toggle.addEventListener('click', () => {
         menu.classList.toggle('active');
-      });
+    });
 
     // Recupera a cor de fundo armazenada e aplica
     let corSalva = localStorage.getItem("corDeFundo");
     if (corSalva) {
         body.style.backgroundColor = corSalva;
     }
-
-    // Verifica se os botões existem antes de adicionar eventos
     if (botaoPreto) {
         botaoPreto.addEventListener("click", function() {
-            let novaCorBody = "rgb(31, 29, 29)"; // Preto
+            let novaCorBody = "rgb(31, 29, 29)"; 
             body.style.backgroundColor = novaCorBody;
-            localStorage.setItem("corDeFundo", novaCorBody); // Salva no localStorage
+            localStorage.setItem("corDeFundo", novaCorBody); 
         });
     }
     if (botaoCinza) {
         botaoCinza.addEventListener("click", function() {
-            let novaCorBody = "rgb(51, 52, 62)"; // Cinza
+            let novaCorBody = "rgb(51, 52, 62)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
@@ -37,14 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (botaoCinzaClaro) {
         botaoCinzaClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(81, 81, 81)"; // Cinza
+            let novaCorBody = "rgb(81, 81, 81)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
     }
     if (botaoAzul) {
         botaoAzul.addEventListener("click", function() {
-            let novaCorBody = "rgb(6, 9, 44)"; // Cinza
+            let novaCorBody = "rgb(6, 9, 44)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
@@ -52,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (botaoAzulClaro) {
         botaoAzulClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(27, 89, 140)"; // Cinza
+            let novaCorBody = "rgb(27, 89, 140)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
@@ -73,4 +71,7 @@ document.querySelectorAll(".toggle").forEach((summary) => {
         }
     });
 });
+
+
+
 

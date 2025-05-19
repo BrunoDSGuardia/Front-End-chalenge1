@@ -44,34 +44,36 @@
                 <h1 class="tituloContato">Entre em contato conosco</h1>
                 
                 <div class="container-formulario">
-                    <form>
+                    <form id="formulario">
                         <fieldset aria-labelledby="form-titulo">
                             <legend>Preencha os dados</legend>
                             <div class="nome-form form">
                                 <label for="nome">Nome:</label>
                                 <br>
-                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="given-name" required>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="given-name" tabindex="1">
                             </div>
 
                             <div class="email-form form">
                                 <label for="email">Email:</label>
                                 <br>
-                                <input type="email" id="email" name="email" placeholder="Digite seu Email" autocomplete="email" required>
+                                <input type="email" id="email" name="email" placeholder="Digite seu Email" autocomplete="email" required tabindex="2">
                             </div>
 
                             <div class="assunto-form form">
                                 <label for="assunto">Assunto:</label>
                                 <br>
-                                <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" autocomplete="off" required>
+                                <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" autocomplete="off" required tabindex="3">
                             </div>
 
                             <div class="msg-form">
                                 <label for="mensagem">Mensagem:</label>
-                                <textarea id="mensagem" name="mensagem" rows="9" cols="2" placeholder="Deixe sua mensagem" autocomplete="off" required></textarea>
+                                <span class="erro"></span>
+
+                                <textarea id="mensagem" name="mensagem" rows="9" cols="2" placeholder="Deixe sua mensagem" autocomplete="off"  tabindex="4"></textarea>
                             </div>
 
                             <div class="submit-form">
-                                <button class="button-form" type="submit" aria-label="Enviar mensagem de contato">Enviar</button>
+                                <button class="button-form" type="submit" aria-label="Enviar mensagem de contato" tabindex="5">Enviar</button>
                             </div>
                         </fieldset>
                     </form>
