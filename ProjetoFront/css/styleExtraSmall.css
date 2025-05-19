@@ -1,3 +1,166 @@
 @media (max-width: 600px) {
+    header {
+      height: 70px;
+    }
+    #logo img {
+      width: 50px;
+    }
+    #titulo a {
+      font-size: 40px;
+      margin-left: 10%;
+    }
+    #menuCores {
+      margin-left: 10px;
+    }
+
+    /* Alterar o layout de #inicio para empilhar os blocos verticalmente */
+    #inicio {
+      flex-direction: column;
+    }
+    #info, #menu {
+      width: 100%;
+      height: auto;
+    }
+    #info h1 {
+      font-size: 4vw;
+      margin-top: 40vh;
+      margin-left: 8%;
+    }
+    #tituloMenu h1 {
+      font-size: 6vw;
+    }
+    .botoes {
+      font-size: 3vh;
+      width: 80%;
+    }
+
+
+/*********************************************/
+/*           PÁGINA DE INTEGRANTES           */
+/*********************************************/
+
+
+
+    /* Reduz o tamanho do título */
+    #titulointegrantes {
+      font-size: 24px;
+      margin-top: 2%;
+    }
     
+    /* Ajusta o container dos integrantes para empilhar os artigos verticalmente */
+    .integrantes {
+      width: 95%;
+      flex-direction: column;
+      height: auto;
+      padding: 1%;
+    }
+    
+    /* Cada integrante ocupa maior parte da largura e centraliza */
+    .integrante {
+      width: 90%;
+      margin: 10px auto;
+      margin-left: 0;
+    }
+    
+    /* Reduz o tamanho das imagens e fontes internas */
+    .integrantes img {
+      width: 200px;
+      height: 200px;
+    }
+    .integrantes h2 {
+      font-size: 30px;
+    }
+    .integrantes p {
+      font-size: 16px;
+    }
+    
+    /* Ajusta os ícones para preservar o equilíbrio */
+    #iconLinkedin, #iconGithub {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+
+
+/******************************************/
+/*           PÁGINA DE CONTATO            */
+/*****************************************/
+
+    .container-formulario-geral {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+    .tituloContato {
+        font-size: 32px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .container-formulario {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .container-formulario label {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    .container-formulario input {
+        width: 90%;
+        font-size: 16px;
+    }
+    .container-formulario fieldset {
+        width: 90%;
+        padding: 10px;
+        border-width: 3px;
+    }
+    .msg-form textarea {
+        margin-left: 0;
+        width: 90%;
+        height: 120px;
+        margin-top: 20px;
+    }
+    .button-form {
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/*************************************/
+/*           PÁGINA DE FAQ           */
+/*************************************/
+
+    /* Reorganiza o layout para coluna */
+    #corpo_pagina_faq {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .titulo_faq h1 {
+        font-size: 4vh;
+        text-align: center;
+    }
+    /* O toggle e section agora ocupam quase toda a largura */
+    .toggle,
+    .section {
+        width: 90%;
+        margin: 10px auto;
+    }
+    /* Remove os alinhamentos "left" e "right" definidos */
+    .left,
+    .right {
+        margin: 0 auto;
+    }
+    /* Ajusta o padding e tamanho do botão */
+    .toggle {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .section {
+        padding: 10px;
+    }
 }
