@@ -51,3 +51,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+document.querySelectorAll(".toggle").forEach((summary) => {
+    summary.addEventListener("click", function () {
+        const section = this.nextElementSibling;
+        
+        if (!section) return;
+
+        if (section.style.maxHeight) {
+            section.style.maxHeight = null;
+            section.style.opacity = "0";
+        } else {
+            section.style.maxHeight = section.scrollHeight + "px";
+            section.style.opacity = "1";
+        }
+    });
+});
+

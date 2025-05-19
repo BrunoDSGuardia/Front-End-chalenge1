@@ -37,7 +37,7 @@ body{
 
 header{
     display: block;
-    background-color: #0093b8;
+    background-color: #0164b5;
     justify-content: center;
     height: 85px;
     width: 100%;
@@ -333,8 +333,8 @@ nav a:hover{
 
 .integrante{
     border: solid 5px #000000;
-    margin-left: 50px;
-    width: 25%;
+    margin-left: 20px;
+    width: 27%;
     background-color: #3f0684;
     border-radius: 50px;
     justify-items: center;
@@ -442,29 +442,95 @@ nav a:hover{
     font-size: 5vh;
 }
 
-.perguntas{
-    width: 50%;
-    display: grid;
 
-    gap: 20px;
-    transition: 0.5s;
+
+section {
+
+    height: 0;
+    transition: height 0.5s ease-in-out;
 }
 
+
+
+.toggle {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6054fe, rgb(62, 96, 247), #3826fc,rgb(62, 96, 247), #6054fe);
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    transition:0.5s;
+    width: 30%; /* Faz o botão ter o mesmo tamanho do section */
+    display: block;
+}
+
+.left{
+    margin-left: 50vh;
+    margin-right: auto;
+}
+
+.right{
+    margin-left: 80vh;
+    margin-right: auto;
+}
+
+.toggle:hover {
+    background: linear-gradient(135deg, #3f32f8, rgb(0, 45, 248), #0f00b3,rgb(0, 45, 248), #3f32f8);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.toggle:active {
+    background: linear-gradient(135deg, #5900ff, rgb(99, 0, 248), #6600be,rgb(99, 0, 248), #5900ff);
+    transform: scale(0.99);
+}
+
+.section {
+    max-height: 0;
+    opacity: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    padding: 15px;
+    background: #4504869f;
+    border-bottom: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 30.4%;
+    border-left: solid 2px #000000;
+    border-right: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+    margin-bottom: 1%;
+    display: block;
+    border-radius:  0 0 8px 8px;
+}
+
+/* .section {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 .detalhes_perguntas{
     background-color: #8457ff79;
     padding: 10px;
     border: 2px solid black;
     margin: 7px;
     transition: 0.5s;
+    width: 60%;
 }
 
 .paragrafo_faq{
     background-color: #0CE899;
-    background-color: #1F3BDB;
-    padding: 1%;
+    background-color: #8457ff79;
+    padding: 0.5%;
     margin: 1%;
     transition: 0.5s;
-}
+} */
 
 
 /******************************************/
@@ -478,45 +544,55 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 80%;
+
+}
+
+input:focus{
+    outline: 5px solid rgba(27, 0, 70, 0.477); 
 }
 
 .tituloContato{
     font-size: 50px;
     margin-top: 1%;
     margin-bottom: 1%;
+    text-decoration: underline;
+    text-decoration-color: rgba(135, 124, 0, 0.817);
 }
 
 .container-formulario{
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
 }
 
 .container-formulario label {
-    font-size: 20px;
+    padding-left: 15px;
+    font-size: 25px;
 }
 
 .container-formulario input {
     border: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(135, 124, 0, 0.817);
     border-radius: 5px 5px 0 0;
     display: flex;
     justify-self: center;
     width: 400px;
     padding: 5px;
     margin-top: 10px;
-    background-color: #4b6ae5;
+    background-color: #f5f5f593;
 }
 
-.container-formulario input::placeholder{
-    color: #121212;
+::placeholder {
+    color: #121212b4;
+    padding-left: 15px;
 }
 
 .container-formulario fieldset{
-    background-color: #4b6ae5;
-    border: 4px solid black;
+    background-color: #0c0c0c81;
+    border: 4px solid rgba(135, 124, 0, 0.817);
     padding: 2%;
     width: 500px;
 
@@ -536,25 +612,27 @@ nav a:hover{
 .msg-form label {
     
     height: 10px;
-        width: 0px;
+    width: 0px;
 }
 
 .msg-form textarea{
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: 40px;
     float: left;
     width: 420px;
     height: 130px;
     resize: none;
     box-sizing: border-box;
-    border: 3px solid #000000;
+    border: 3px solid rgba(135, 124, 0, 0.817);
     border-radius: 5px;
     background-color: #cececed4;
     font-size: 16px;
 }
-
+placeholder{
+    color: #121212;
+}
 textarea:focus {
-    outline: 3px solid rgb(88, 88, 234); 
+    outline: 5px solid rgba(27, 0, 70, 0.477); 
 }​
 
 button:disabled {
@@ -564,20 +642,29 @@ button:disabled {
     border: 1px solid #999999;
 }
 
-button{
+.button-form{
     width: 100px;
     height: 40px;
-    background-color: #cccedd;
+    background-color: #b4b5b8;
     color: #000000;
     border-radius: 5px;
     border: solid 2px #000000;
     font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
 }
 
-button:hover {
-    background-color: #0CE899;
+.button-form:hover {
+    background-color: #33ba88;
+    color: #1f1b1b;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.button-form:active {
+    background-color: #33ba88;
     color: #000000;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor: pointer;
 }
 
@@ -609,7 +696,7 @@ button:hover {
 
 footer {
     display: flex;
-    background-color: #086F9C;
+    background-color: #0076b5;
     justify-content: center;
     color: rgb(53, 157, 249);
     height: 23px;
