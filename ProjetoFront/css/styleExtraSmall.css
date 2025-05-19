@@ -1,4 +1,13 @@
 @media (max-width: 600px) {
+  html, body {
+    min-height: 100vh;
+  }
+
+  #container-geral{
+    flex: 1;
+    width: 100%;
+  }
+
   header {
     height: 70px;
     display: block;
@@ -50,6 +59,12 @@
     height: 25px;
     margin-top: 32px;
   }
+
+  #container-formulario-geral {
+    flex: 1;
+    width: 100%;
+  }
+
 
 /* Alterar o layout de #inicio para empilhar os blocos verticalmente */
   #inicio {
@@ -216,4 +231,14 @@
   .section {
       padding: 10px;
   }
+
+
+/******************************/
+/*           FOOTER           */
+/******************************/
+
+  footer {
+    margin-top: auto;
+  }
+
 }
