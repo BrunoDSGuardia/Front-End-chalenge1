@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menuCores');
     const menuCompleto = document.getElementById('menuNav');
-    const removeLi = document.querySelectorAll('li')
+    const removeLi = document.querySelectorAll('li');
     let botaoPreto = document.getElementById("botaoCor");
     let botaoCinza = document.getElementById("botaoCor2");
     let botaoCinzaClaro = document.getElementById("botaoCor3");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     toggle.addEventListener('click', () => {
         menu.classList.toggle('active');
         menuCompleto.classList.toggle('active')
-        // Removendo caracter da nav
+        // Removendo caractere da nav
         removeLi.forEach(li => {
             li.childNodes.forEach(node => {
                 if (node.nodeType === Node.TEXT_NODE) {
