@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let novaCorBody = "rgb(31, 29, 29)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody); 
+
         });
     }
     if (botaoCinza) {
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (botaoAzulClaro) {
         botaoAzulClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(27, 89, 140)"; 
+            let novaCorBody = "rgb(27, 89, 140)";  
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
