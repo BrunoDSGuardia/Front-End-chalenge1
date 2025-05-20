@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/provisorio.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleExtraSmall.css">
-    <title>Guia Projeto</title>
+    <title> Projeto </title>
 </head>
 <body>
     <header>
@@ -19,28 +20,83 @@
             ☰
         </div>
         <div id="menuCores">
-                <button tabindex="6" id="botaoCor" class="BotaoBody"></button>
-                <button tabindex="7"id="botaoCor2" class="BotaoBody"></button>
-                <button tabindex="8"id="botaoCor3" class="BotaoBody"></button>
-                <button tabindex="9"id="botaoCor4" class="BotaoBody"></button>
-                <button tabindex="10"id="botaoCor5" class="BotaoBody"></button>
+                <button tabindex="16" id="botaoCor" class="BotaoBody"></button>
+                <button tabindex="17"id="botaoCor2" class="BotaoBody"></button>
+                <button tabindex="18"id="botaoCor3" class="BotaoBody"></button>
+                <button tabindex="19"id="botaoCor4" class="BotaoBody"></button>
+                <button tabindex="20"id="botaoCor5" class="BotaoBody"></button>
         </div>
     </header>
     <nav id="menuNav">
         <ul>
-            <li tabindex="1"><a href="index.html">MENU</a></li>
+            <li tabindex="11"><a href="index.html">MENU</a></li>
             <li>|</li>
-            <li tabindex="2"><a href="integrantes.html">INTEGRANTES</a></li>
+            <li tabindex="12"><a href="integrantes.html">INTEGRANTES</a></li>
             <li>|</li>
-            <li tabindex="3"><a href="#">PROJETO</a></li>
+            <li tabindex="13"><a href="#">PROJETO</a></li>
             <li>|</li>
-            <li tabindex="4"><a href="faq.html">FAQ</a></li>
+            <li tabindex="14"><a href="faq.html">FAQ</a></li>
             <li>|</li>
-            <li tabindex="5"><a href="contato.html">CONTATO</a></li>
+            <li tabindex="15"><a href="contato.html">CONTATO</a></li>
         </ul>    
     </nav> id="menuNav"
     <main>
+        <div id="container-projeto">
+            <form action="projeto">
+                <fieldset aria-labelledby="form-titulo-projeto">
+                    <legend>Cadastro</legend>
+                    <div class="nome-form form">
+                        <label for="nome-projeto">Nome Completo:</label>
+                        <br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="given-name" tabindex="1">
+                    </div>
 
+                    <div class="email-projeto">
+                        <label for="email-projeto">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Digite seu Email" autocomplete="email" tabindex="2">
+                    </div>
+                    <div class="email-projeto">
+                        <label for="email-projeto">Email:</label>
+                        <br>
+                        <input type="email" id="email-projeto" name="email" placeholder="xxxxxx@xxx.com" autocomplete="email" tabindex="3">
+                    </div>
+
+                    <div class="telefone-projeto">
+                        <label for="telefone-projeto">Telefone:</label>
+                        <br>
+                        <input type="tel" id="" name="assunto" placeholder="(12) 12345-6789"  tabindex="4">
+                    </div>
+                    
+                    <div>
+                        <label for="sexo">Escolha o seu sequisu:</label><br>
+                        <input type="radio" name="escolhasexo" tabindex="5">Masculine
+                        <input type="radio" name="escolhasexo" tabindex="6">Feminine 
+                        <input type="radio" name="escolhasexo" tabindex="7">Outres                      
+                    </div>
+                    
+                    <div class="senha-projeto">
+                        <label for="senha-projeto">Senha:</label>
+                        <br>
+                        <input type="password" id="" name="Senha-projeto" placeholder="Digite sua senha" autocomplete="off" dtabindex="8" >
+                        
+
+                    </div>
+                        <div class="senha-confirmacao-projeto">
+                        <label for="senha-confirmacao-projeto">Confirme a Senha:</label>
+                        <br>
+                        <input type="password" id="" name="Senha-projeto" placeholder="Confirme sua senha" autocomplete="off"  tabindex="9">
+                    </div>
+
+
+
+                        <button class="button-projeto" type="submit-projeto" aria-label="Enviar mensagem de contato" tabindex="10">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+        
         <section id="section-projeto">
             <h2>Sobre o Projeto</h2>
             <p>Conteúdo do projeto será adicionado aqui em breve.</p>

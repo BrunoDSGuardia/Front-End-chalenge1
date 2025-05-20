@@ -123,3 +123,41 @@ formulario.addEventListener('submit', (e) => {
     }
     
 })
+
+const nomeProjeto = document.getElementById("nome-projeto");
+const emailProjeto = document.getElementById("email-projeto");
+const assuntoProjeto = document.getElementById("assunto-projeto");
+const mensagemProjeto = document.getElementById("mensagem-projeto");
+const formularioProjeto = document.getElementById("formulario-projeto");
+const erroProjeto = document.getElementById("erro-projeto");
+
+formulario.addEventListener('submit', (e) => {
+    let mensagem = [];
+    
+    if (nome.value === "" || nome.value === null) {
+        mensagem.push("\nInsira seu nome");
+    }
+    const partesNome = nome.value.trim().split(" ");
+    if (partesNome.length < 2 || nome.length === 1) {
+        mensagem.push("\nAdicione um sobrenome");
+    }
+    if (email.value === "" || email.value === null) {
+        mensagem.push("\nInsira seu email");
+    }
+    if (assunto.value === "" || assunto.value === null) {
+        mensagem.push("\nInsira o assunto da mensagem");
+    }
+    if (mensagemFormulario.value === "" || mensagemFormulario.value === null) {
+        mensagem.push("\nInsira sua mensagem");
+    }
+    if (mensagem.length > 0) {
+        e.preventDefault();
+        alert(mensagem.join());
+    } else {
+        e.preventDefault();
+        alert("Mensagem enviada com sucesso!");
+        formulario.reset();
+    }
+    
+})
+
