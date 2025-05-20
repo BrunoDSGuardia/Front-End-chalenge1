@@ -2,11 +2,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let body = document.body;
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menuCores');
+    const menuCompleto = document.getElementById('menuNav');
+    const removeLi = document.querySelectorAll('li')
     let botaoPreto = document.getElementById("botaoCor");
     let botaoCinza = document.getElementById("botaoCor2");
     let botaoCinzaClaro = document.getElementById("botaoCor3");
     let botaoAzul = document.getElementById("botaoCor4");
     let botaoAzulClaro = document.getElementById("botaoCor5");
+
+
+    // Ativando Menu Hambúrguer
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        menuCompleto.classList.toggle('active')
+        // Removendo caracter da nav
+        removeLi.forEach(li => {
+            li.childNodes.forEach(node => {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    node.nodeValue = node.nodeValue.replace('|', '').trim();
+                }
+            });
+        });
+    });
+
+
 
 
     let corSalva = localStorage.getItem("corDeFundo");

@@ -24,9 +24,9 @@
     width: 65px;
   }
   #titulo a {
-    margin-top: 9px;
+    margin-top: 11px;
     font-size: 55px;
-    margin-left: 14%;
+    margin-left: 15%;
   }
   
   .menu-toggle {
@@ -36,27 +36,57 @@
   #menuCores {
     display: none;
     flex-direction: column;
-    background-color: #086F9C;
+    justify-content: center;
+    align-items: center;
+    background-color: #0164b59a;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 10px;
+    top: 12vh;
+    right: 7vh;
+    width: 7vh;
+    height: 32vh;
   }
   
   #menuCores.active {
-    display: flex;
+    display: block;
+    border-radius: 10px;
   }
   
   #botaoCor{
-    margin-left: 9%;
+    margin-left: 1.5vh;
   
   }
 
   header button{
-    width: 25px;
-    height: 25px;
-    margin-top: 32px;
+    width: 4vh;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-left: 1.5vh;
+  }
+
+  #menuNav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0164b59a;
+    position: absolute;
+    min-width: 20%;
+    top: 14.2vh;
+    right: 13.9vh;
+    width: 6vh;
+    height: 29vh;
+    /* border-radius: 0; */
+  }
+
+  #menuNav ul {
+    padding-top: 12px;
+    margin-left: 10%;
+    flex-wrap: wrap;
+  }
+
+  #menuNav.active{
+    display: block;
+    flex-wrap: wrap;
   }
 
   
@@ -72,7 +102,7 @@
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
     background-size: cover;
-    filter: drop-shadow(15px 20px 15px #0c0d0d);;
+    /* filter: drop-shadow(15px 20px 15px #0c0d0d);; */
     transition: .2s;
     align-items: center;
     justify-content: center;
@@ -83,6 +113,7 @@
   #menu {
     width: 100%;
     height: auto;
+    z-index: 2;
   }
   #info:hover{
     width: 100%;
@@ -113,22 +144,21 @@
   /* Reduz o tamanho do título */
   #titulointegrantes {
     font-size: 24px;
-    margin-top: 2%;
+    margin: 4%;
   }
   
   /* Ajusta o container dos integrantes para empilhar os artigos verticalmente */
   .integrantes {
-    width: 95%;
+    width: 70%;
     flex-direction: column;
     height: auto;
-    padding: 1%;
+    padding: 2%;
   }
   
   /* Cada integrante ocupa maior parte da largura e centraliza */
   .integrante {
-    width: 90%;
-    margin: 10px auto;
-    margin-left: 0;
+    width: 85%;
+    margin: 10px 15px;
   }
   
   /* Reduz o tamanho das imagens e fontes internas */
@@ -156,22 +186,28 @@
   /*****************************************/
   
   .container-formulario-geral {
-      width: 95%;
+      width: 100%;
       height: auto;
-      padding: 20px;
+      
   }
   .tituloContato {
       font-size: 32px;
-      margin-top: 10px;
+      margin-top: 30px;
+      margin-bottom: 35px;
       text-align: center;
   }
   .container-formulario {
-      margin-left: 0;
-      width: 100%;
+      display: block;
+      margin-left: auto;
+      width: 95%;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
-  }
+    }
+    .container-formulario fieldset {
+        width: 90%;
+        padding: 10px;
+        border-width: 3px;
+    }
   .container-formulario label {
       font-size: 18px;
       padding-left: 5px;
@@ -180,16 +216,12 @@
       width: 90%;
       font-size: 16px;
   }
-  .container-formulario fieldset {
-      width: 90%;
-      padding: 10px;
-      border-width: 3px;
-  }
   .msg-form textarea {
-      margin-left: 0;
-      width: 90%;
-      height: 120px;
-      margin-top: 20px;
+    margin-left: 15px;
+    width: 92%;
+    height: 120px;
+    margin-top: 30px;
+    padding: 10px 3px;
   }
   .button-form {
       width: 80px;
@@ -207,7 +239,8 @@
   #corpo_pagina_faq {
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      min-height: auto;
+      
   }
   .titulo_faq h1 {
       font-size: 4vh;
@@ -216,7 +249,7 @@
   /* O toggle e section agora ocupam quase toda a largura */
   .toggle,
   .section {
-      width: 90%;
+      width: 80%;
       margin: 10px auto;
   }
   /* Remove os alinhamentos "left" e "right" definidos */
@@ -226,6 +259,7 @@
   }
   /* Ajusta o padding e tamanho do botão */
   .toggle {
+    margin-top: 15px;
       padding: 10px 15px;
       font-size: 16px;
   }
@@ -239,11 +273,11 @@
 /******************************/
 
   footer {
-    margin-top: auto;
+    margin-top: 120px;
+    z-index: 4;
   }
 
-  #footer-principal {
-    margin-top: auto;
+  #footer-format {
+    margin-top: 20px;
   }
-
 }

@@ -70,7 +70,7 @@ header{
     text-decoration: none;
     margin-left: 29%;
     font-size: 70px;
-    color: #0ed844;
+    color: #fff;
     transition: 0.8s;
 }
 
@@ -87,12 +87,13 @@ header{
     margin-right: 40px;
     font-size: 50px;
     cursor: pointer;
+    
 }
     
 
 header button{
-    margin-top: 30px;
-    margin-left: 1vh;
+    margin-top: 3vh;
+    margin-left: 2vh;
     width: 5vh;
     height: 5vh;
     border-radius: 5px;
@@ -105,11 +106,13 @@ header button:hover{
     
 }
 
-#menuCores{
-    margin-left: 100px;
+.menuCores{
+    position: relative;
+    z-index: 2;
 }
+
 #botaoCor{
-    margin-left: 10vh;
+    margin-left: 30vh;
     background-color: rgb(31, 29, 29);
     transition: 0.3s;
 }
@@ -143,7 +146,7 @@ main{
 /******************************/
 
 
-nav{
+#menuNav{
     display: block;
     background-color: #007694;
     justify-content:center;
@@ -155,7 +158,7 @@ nav{
 
 }
 
-nav ul{
+#menuNav ul{
     margin-left: 30%;
     float: left;
     display: flex;
@@ -163,22 +166,23 @@ nav ul{
     align-self: center;
 }
 
-nav li{
-    font-size: 25px;
+#menuNav li{
+    font-size: 17px;
     float: left;
     display: flex;
     list-style: none;
     margin-left: 4px;
+    margin-bottom: 10px;
 
 }
 
-nav a{
+#menuNav a{
     text-decoration: none;
     color: #e4e4e4;
     transition: 0.5s;
 }
 
-nav a:hover{
+#menuNav a:hover{
     color: #0CE899;
     transition: 0.5s;
 }
