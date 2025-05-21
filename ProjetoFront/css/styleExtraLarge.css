@@ -1,9 +1,16 @@
 @media (min-width: 1300px) {
+  header {
+    height: 14%;
+  }
+
     #titulo a {
-      font-size: 80px;
+      padding-top: 5px;
+      margin-left: 24%;
+      font-size: 75px;
     }
     #logo img {
-      width: 85px;
+      padding-top: 0;
+      width: 80px;
     }
     .botoes {
       font-size: 4.5vh;

@@ -40,7 +40,7 @@
     align-items: center;
     background-color: #0164b5;
     position: absolute;
-    top: 32vh;
+    top: 38vh;
     right: 0;
     opacity: 0;
     transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -299,7 +299,7 @@
 /******************************/
 
   footer {
-    margin-top: 150px;
+    margin-top: 22%;
     z-index: 4;
   }
 

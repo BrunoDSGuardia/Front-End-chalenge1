@@ -40,11 +40,12 @@
         align-items: center;
         background-color: #0164b5;
         position: absolute;
-        top: 31vh;
+        top: 40vh;
         right: 0;
         opacity: 0;
         transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
         width: 35vh;
+        min-width: 20%;
         height: -1000px;
         z-index: 3;
       }
@@ -78,7 +79,7 @@
         background-color: #0164b5;
         position: absolute;
         min-width: 20%;
-        top: 10vh;
+        top: 12vh;
         right: 0;
         max-width: 35vh;
         height: -1000px;
@@ -102,7 +103,7 @@
       #menuNav.active{
         display: block;
         right: 0;
-        height: 25vh;
+        height: 29vh;
         opacity: 1;
         pointer-events: all;
         z-index: 2;
@@ -302,7 +303,7 @@
     /******************************/
 
     footer {
-        margin-top: 180px;
+        margin-top: 20%;
         z-index: 4;
       }
     
