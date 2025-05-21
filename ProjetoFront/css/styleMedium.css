@@ -1,3 +1,14 @@
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
+@media (min-width: 768px) {
+    #titulo a {
+      font-size: 60px;
+    }
+    #logo img {
+      width: 65px;
+    }
+    #tituloMenu h1 {
+      font-size: 4vw;
+    }
+    .botoes {
+      font-size: 4vh;
+    }
+  }

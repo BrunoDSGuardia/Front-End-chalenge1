@@ -40,7 +40,7 @@
     align-items: center;
     background-color: #0164b5;
     position: absolute;
-    top: 36vh;
+    top: 34vh;
     right: 0;
     opacity: 0;
     transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -78,7 +78,7 @@
     background-color: #0164b5;
     position: absolute;
     min-width: 20%;
-    top: 13vh;
+    top: 12vh;
     right: 0;
     max-width: 35vh;
     height: -1000px;
@@ -88,12 +88,11 @@
 
   #menuNav ul {
     justify-content: center;
-    padding-top: 12px;
-    margin-left: 10px;
+    padding-top: 16px;
     flex-wrap: wrap;
     white-space: wrap;
     max-width: 20%;
-    margin-left: 82px;
+    margin-left: 40%;
   }
 
   #menuNav li{
@@ -209,7 +208,7 @@
   
   /******************************************/
   /*           PÁGINA DE CONTATO            */
-  /*****************************************/
+  /******************************************/
   
   .container-formulario-geral {
       width: 100%;
@@ -299,7 +298,7 @@
 /******************************/
 
   footer {
-    margin-top: 120px;
+    margin-top: 150px;
     z-index: 4;
   }
 
