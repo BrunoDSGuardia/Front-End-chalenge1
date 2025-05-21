@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         const sexoProjeto = document.querySelector('input[name="escolhasexo"]:checked');
         if (!sexoProjeto) {
-            mensagemProjeto.push("Selecione o sexo");
+            mensagemProjeto.push("Selecione seu gener");
         }
 
 

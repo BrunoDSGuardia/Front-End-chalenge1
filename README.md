@@ -19,16 +19,17 @@ Front-End-challenge1/
 │   │   ├── styleMedium.css  
 │   │   ├── styleSmall.css  
 │   ├── img/  
-│   │   ├── Bruno_real.png  
-│   │   ├── dogo.jpg  
+│   │   ├── Arthur.png  
+│   │   ├── BrunoDias.png
 │   │   ├── github.png  
-│   │   ├── IMG_2002.png  
 │   │   ├── info.avif  
 │   │   ├── linkedin.png  
 │   │   ├── LogoGuiaHC.png  
 │   │   └── Vitor.jpg  
 │   │─── js/             
-│   │   └── script.js          
+│   │   ├── script.js 
+│   │   ├── scriptFormulario.js
+│   │   └── scriptProjeto.js
 │   ├── contato.html  
 │   ├── faq.html  
 │   ├── index.html  
