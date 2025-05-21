@@ -7,38 +7,35 @@ Nosso produto usará como base a pesquisa do Centro Regional de Estudos para o D
 
 # Estrutura de pasta
 
-meu-projeto/
 
-Front-End-challenge1/
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── styleSmall.css
-│   │   ├── styleMedium.css
-│   │   ├── styleLarge.css
-│   │   ├── styleExtraSmall.css
-│   │   ├── styleExtraLarge.css
-│   │   └── _temporarios/
-│   │       └── provisorio.css
-│   ├── img/
-│   │   ├── Bruno_real.png
-│   │   ├── Vitor.jpg
-│   │   ├── IMG_2002.png
-│   │   ├── github.png
-│   │   ├── linkedin.png
-│   │   ├── LogoGuiaHC.png
-│   │   ├── info.avif
-│   │   └── dogo.jpg
-├── pages/
-│   ├── index.html
-│   ├── contato.html
-│   ├── faq.html
-│   ├── integrantes.html
-│   └── projeto.html
-├── scripts/           ← (caso adicione JS futuramente)
-│   └── main.js        ← (exemplo de nome)
-├── .gitattributes
-└── README.md
+
+Front-End-challenge1/  
+├── ProjetoFront/  
+│   ├── css/  
+│   │   ├── style.css  
+│   │   ├── styleExtraLarge.css  
+│   │   ├── styleExtraSmall.css  
+│   │   ├── styleLarge.css  
+│   │   ├── styleMedium.css  
+│   │   ├── styleSmall.css  
+│   ├── img/  
+│   │   ├── Bruno_real.png  
+│   │   ├── dogo.jpg  
+│   │   ├── github.png  
+│   │   ├── IMG_2002.png  
+│   │   ├── info.avif  
+│   │   ├── linkedin.png  
+│   │   ├── LogoGuiaHC.png  
+│   │   └── Vitor.jpg  
+│   │─── js/             
+│   │   └── script.js          
+│   ├── contato.html  
+│   ├── faq.html  
+│   ├── index.html  
+│   ├── integrantes.html  
+│   └── projeto.html  
+.gitattributes  
+README.md  
 
 
 

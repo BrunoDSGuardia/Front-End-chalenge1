@@ -670,20 +670,100 @@ button:disabled {
 /*      Página do Projeto      */
 /*******************************/
 
-#section-projeto{
-    width: 100%;
-    padding-top: 25px;
-    justify-content: center;
-    text-align: center;
-}
 
-#section-projeto h2{
-    padding-bottom: 7px;
-}
+
+
 
 #section-projeto p{
-    justify-self: center;
-    width:fit-content;
+    padding-bottom: 1%;
+}
+
+#container-projeto{
+    width: 30%;
+    margin-top: 100px;
+    padding-left: 30%;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+#container-projeto {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid rgba(0, 17, 255, 0.817);
+    border-radius: 5px 5px 0 0;
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #f5f5f593;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+
+::placeholder {
+    color: #121212b4;
+    padding-left: 15px;
+}
+
+#container-projeto fieldset{
+    background-color: #35375181;
+    border: 4px solid rgba(0, 17, 255, 0.817);
+    padding: 2%;
+    width: 500px;
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* funciona em vertical também */
+    gap: 15px;
+    
+}
+
+
+placeholder{
+    color: #121212;
+}
+
+.button-projeto:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    border: 1px solid #999999;
+}
+
+.button-projeto{
+    width: 100px;
+    height: 40px;
+    background-color: #b4b5b8;
+    color: #000000;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.button-projeto:hover {
+    background-color: #00cbf4;
+    color: #1f1b1b;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.button-projeto:active {
+    background-color: #33a6ba;
+    color: #000000;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 
