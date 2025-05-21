@@ -1,17 +1,57 @@
 @media (min-width: 992px) {
-    header {
-      height: 85px;
-    }
-    #titulo a {
-      font-size: 70px;
-      margin-left: 29%;
-    }
-    #info h1 {
-      font-size: 3vw;
-      margin-top: 60vh;
-    }
-    .botoes {
-      font-size: 4vh;
-      width: 60%;
-    }
+  
+  /****************************************/
+  /*           PÁGINA PRINCIPAL           */
+  /****************************************/
+  
+  header {
+    height: 85px;
+  }
+  #titulo a {
+    font-size: 70px;
+    margin-left: 21%;
+    margin-top: 0;
+    
+  }
+  #info h1 {
+    font-size: 3vw;
+    margin-top: 60vh;
+  }
+  .botoes {
+    font-size: 4vh;
+    width: 60%;
+  }
+
+
+  /*********************************************/
+  /*           PÁGINA DE INTEGRANTES           */
+  /*********************************************/
+
+  .integrantes{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+  }
+
+
+  /******************************************/
+  /*           PÁGINA DE CONTATO            */
+  /******************************************/
+
+
+
+  /*************************************/
+  /*           PÁGINA DE FAQ           */
+  /*************************************/
+
+
+
+  /******************************/
+  /*           FOOTER           */
+  /******************************/
+
+  footer {
+    margin-top: 300px;
+  }
+
   }

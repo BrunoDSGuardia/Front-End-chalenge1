@@ -40,7 +40,7 @@
     align-items: center;
     background-color: #0164b5;
     position: absolute;
-    top: 34vh;
+    top: 32vh;
     right: 0;
     opacity: 0;
     transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -59,7 +59,7 @@
   }
   
   #botaoCor{
-    margin-left: 1.5vh;
+    margin-left: 3.5vh;
   
   }
 
@@ -78,7 +78,7 @@
     background-color: #0164b5;
     position: absolute;
     min-width: 20%;
-    top: 12vh;
+    top: 10vh;
     right: 0;
     max-width: 35vh;
     height: -1000px;
@@ -88,7 +88,7 @@
 
   #menuNav ul {
     justify-content: center;
-    padding-top: 16px;
+    padding-top: 27px;
     flex-wrap: wrap;
     white-space: wrap;
     max-width: 20%;
@@ -97,6 +97,7 @@
 
   #menuNav li{
     margin-bottom: 5px;
+    font-size: 20px;
   }
 
   #menuNav.active{
@@ -109,7 +110,7 @@
   }
 
   #menuNav a {
-    font-size: 17px;
+    font-size: 20px;
 
   }
 
@@ -139,9 +140,9 @@
     width: 100%;
   }
   #info h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-top: 40vh;
-    margin-left: 8%;
+    margin-left: 6%;
   }
   #menu {
     width: 100%;
