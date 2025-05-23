@@ -194,8 +194,8 @@
   
   /* Reduz o tamanho das imagens e fontes internas */
   .integrantes img {
-    width: 350px;
-    height: 350px;
+    width: 230px;
+    height: 230px;
   }
   .integrantes h2 {
     font-size: 40px;
@@ -303,7 +303,7 @@
     /******************************/
 
     footer {
-        margin-top: 20%;
+        margin-top: 25%;
         z-index: 4;
       }
     

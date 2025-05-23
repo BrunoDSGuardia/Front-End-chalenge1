@@ -147,30 +147,39 @@ main{
 /******************************/
 
 
-#menuNav{
+#menuNav {
     display: flex;
-    background-color: #007694;
-    justify-content:center;
+    position: static;
     height: 30px;
-    width: 100%;
+    opacity: 1;
+    pointer-events: all;
+    transition: none;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+  }
 
-}
+  #menuNav ul {
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    padding-top: 0;
+  }
 
-#menuNav ul{
-    float: left;
+  #menuNav ul li {
+    margin-left: 5px;
+  }
+
+  #menuCores {
+    pointer-events: all;
+    background-color: #007694;
     display: flex;
-    list-style: none;
-    align-self: center;
-    
-}
-
-#menuNav li{
-    font-size: 17px;
-    float: left;
-    display: block;
-    list-style: none;
-    
-}
+    flex-direction: row;
+    opacity: 1;
+    background-color: transparent;
+    top: 4vh;
+    right: 4vh;
+  }
 
 #menuNav a{
     text-decoration: none;

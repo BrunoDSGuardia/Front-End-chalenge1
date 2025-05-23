@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     #titulo a {
       font-size: 60px;
       margin-left: 20%;
@@ -14,19 +14,51 @@
       font-size: 4vh;
     }
 
+    .menu-toggle {
+      display: none;
+    }
+
     #menuNav {
-      min-height: 32vh;
+      display: flex;
+      position: static;
+      height: 30px;
+      opacity: 1;
+      pointer-events: all;
+      transition: none;
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+    }
+
+    #menuNav ul {
+      flex-direction: row;
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      padding-top: 0;
+    }
+
+    #menuNav ul li {
+      margin-left: 5px;
     }
 
     #menuCores {
-      top: 40vh;
+      pointer-events: all;
+      background-color: #007694;
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      background-color: transparent;
+      top: 4vh;
+      right: 4vh;
     }
 
   /****************************************/
   /*           PÁGINA PRINCIPAL           */
   /****************************************/
 
-
+    #info h1 {
+      font-size: 25px;
+    }
 
   /*********************************************/
   /*           PÁGINA DE INTEGRANTES           */
