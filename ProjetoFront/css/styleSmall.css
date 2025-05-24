@@ -34,6 +34,8 @@
       
       .menu-toggle {
         display: block;
+    margin-bottom: 12px;
+
       }
       
       #menuCores {
@@ -43,7 +45,7 @@
         align-items: center;
         background-color: #0164b5;
         position: absolute;
-        top: 40vh;
+        top: 44vh;
         right: 0;
         opacity: 0;
         transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -85,7 +87,7 @@
         background-color: #0164b5;
         position: absolute;
         min-width: 20%;
-        top: 12vh;
+        top: 14.3vh;
         right: 0;
         max-width: 35vh;
         height: -1000px;
@@ -109,7 +111,7 @@
       #menuNav.active{
         display: block;
         right: 0;
-        height: 29vh;
+        height: 31vh;
         opacity: 1;
         pointer-events: all;
         z-index: 2;
@@ -142,9 +144,6 @@
         align-items: center;
         box-sizing: border-box;
         padding-bottom: 10px;
-      }
-      #info:hover{
-        width: 100%;
       }
       #info h1 {
         font-size: 4vw;
@@ -309,11 +308,7 @@
     /******************************/
 
     footer {
-        margin-top: 25%;
+        margin-top: 10%;
         z-index: 4;
-      }
-    
-      #footer-format {
-        margin-top: 20px;
       }
 }

@@ -70,13 +70,13 @@ header{
 #titulo a{
     float: left;
     text-decoration: none;
-    margin-left: 10%;
     font-size: 70px;
     color: #fff;
     transition: 0.8s;
     flex: 1;
     flex-grow: 1; /* Permite que ele ocupe o espaço necessário */
     text-align: center; /* Garante que o texto do link fique centralizado */
+
 }
 
 #titulo a:hover{
@@ -87,6 +87,10 @@ header{
 
 .menu-toggle {
     display: none;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     float: right;
     margin-top: 7px;
     margin-right: 40px;
@@ -120,7 +124,6 @@ header button:hover{
 }
 
 #botaoCor{
-    margin-left: 30vh;
     background-color: rgb(31, 29, 29);
     transition: 0.3s;
 }
@@ -789,6 +792,10 @@ footer {
     margin-top: auto;
     position: relative;
 }
+
+#footer-format {
+    margin-top: 25%;
+  }
 
 .rodape{
     padding-top: 2px;

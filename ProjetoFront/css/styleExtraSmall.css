@@ -21,7 +21,7 @@
   }
 
   #titulo {
-    flex: 1;
+    flex: 0.6;
   }
 
   #logo img {
@@ -30,11 +30,12 @@
   }
   #titulo a {
     font-size: 48px;
-    margin-left: 13.5%;
+    margin-left: 0;
   }
   
   .menu-toggle {
     display: block;
+    margin-bottom: 12px;
   }
   
   #menuCores {
@@ -44,11 +45,11 @@
     align-items: center;
     background-color: #0164b5;
     position: absolute;
-    top: 38vh;
+    top: 39vh;
     right: 0;
     opacity: 0;
     transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
-    width: 35vh;
+    width: 30vh;
     height: -1000px;
     z-index: 3;
     flex: 0;
@@ -62,9 +63,14 @@
     pointer-events: all;
     opacity: 1;
   }
+
+  .BotaoBody {
+    width: 21px;
+    height: 21px;
+  }
   
   #botaoCor{
-    margin-left: 3.5vh;
+    margin-left: 2vh;
   
   }
 
@@ -83,9 +89,9 @@
     background-color: #0164b5;
     position: absolute;
     min-width: 20%;
-    top: 10vh;
+    top: 12vh;
     right: 0;
-    max-width: 35vh;
+    max-width: 30vh;
     height: -1000px;
     opacity: 0;
     transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -93,7 +99,7 @@
 
   #menuNav ul {
     justify-content: center;
-    padding-top: 27px;
+    padding-top: 15px;
     flex-wrap: wrap;
     white-space: wrap;
     max-width: 20%;
@@ -140,9 +146,6 @@
     align-items: center;
     box-sizing: border-box;
     padding-bottom: 30px;
-  }
-  #info:hover{
-    width: 100%;
   }
   #info h1 {
     font-size: 3vw;
@@ -315,8 +318,42 @@
 
 @media (max-width: 480px){
   #titulo a{
-    margin-top: 17px;
-    margin-left: 9%;
-    font-size: 44px;
+    font-size: 40px;
+  }
+
+#titulo {
+  flex-wrap: nowrap;
+  flex: 0.6;
+}
+
+  #logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #menuNav {
+    top: 14vh;
+    width: 27vh;
+  }
+
+  #menuCores {
+    top: 43vh;
+    width: 27vh;
+  }
+
+  .BotaoBody{
+    width: 19px;
+    height: 19px;
+  }
+
+  #botaoCor{
+    margin-left: 1.4vh;
+  }
+
+  #menu-toggle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
   }
 }
