@@ -9,14 +9,19 @@
 
   header {
     height: 70px;
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 
   }
 
   #logo {
-    margin-left: 7%;
+    flex: 0;
+  }
+
+  #titulo {
+    flex: 1;
   }
 
   #logo img {
@@ -24,7 +29,6 @@
     width: 65px;
   }
   #titulo a {
-    margin-top: 11px;
     font-size: 48px;
     margin-left: 13.5%;
   }
@@ -47,6 +51,7 @@
     width: 35vh;
     height: -1000px;
     z-index: 3;
+    flex: 0;
   }
   
   #menuCores.active {

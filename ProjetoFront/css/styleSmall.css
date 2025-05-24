@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 767px) {
     html, body {
         min-height: 100vh;
       }
@@ -9,24 +9,27 @@
     
       header {
         height: 70px;
-        display: block;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        flex-wrap: nowrap; /* Ajusta para evitar quebra */
+        padding: 0;
     
       }
     
       #logo {
         margin-left: 7%;
+        flex: 0;
       }
     
       #logo img {
-        margin-top: 5px;
+        margin-left: -10px;
+        margin-top: 0;
         width: 65px;
       }
       #titulo a {
-        margin-top: 11px;
+        margin-top: 0;
         font-size: 55px;
-        margin-left: 20%;
+        margin-left: 0;
       }
       
       .menu-toggle {
@@ -48,6 +51,9 @@
         min-width: 20%;
         height: -1000px;
         z-index: 3;
+        flex: 0;
+        display: flex;
+        /* gap: 1px; */
       }
       
       #menuCores.active {
