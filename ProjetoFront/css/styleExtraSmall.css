@@ -127,7 +127,6 @@
 
   
   
-  /* Alterar o layout de #inicio para empilhar os blocos verticalmente */
   #inicio {
     flex-direction: column;
   }
@@ -138,7 +137,6 @@
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
     background-size: cover;
-    /* filter: drop-shadow(15px 20px 15px #0c0d0d); */
     transition: .2s;
     align-items: center;
     justify-content: center;
@@ -175,13 +173,11 @@
   /*           PÁGINA DE INTEGRANTES           */
   /*********************************************/
   
-  /* Reduz o tamanho do título */
   #titulointegrantes {
     font-size: 24px;
     margin: 4%;
   }
   
-  /* Ajusta o container dos integrantes para empilhar os artigos verticalmente */
   .integrantes {
     width: 70%;
     flex-direction: column;
@@ -189,13 +185,11 @@
     padding: 2%;
   }
   
-  /* Cada integrante ocupa maior parte da largura e centraliza */
   .integrante {
     width: 85%;
     margin: 10px 15px;
   }
   
-  /* Reduz o tamanho das imagens e fontes internas */
   .integrantes img {
     width: 200px;
     height: 200px;
@@ -207,7 +201,6 @@
     font-size: 16px;
   }
   
-  /* Ajusta os ícones para preservar o equilíbrio */
   #iconLinkedin, #iconGithub {
     width: 40px;
     height: 40px;
@@ -269,7 +262,6 @@
 /*           PÁGINA DE FAQ           */
 /*************************************/
 
-  /* Reorganiza o layout para coluna */
   #corpo_pagina_faq {
       flex-direction: column;
       align-items: center;
@@ -280,18 +272,15 @@
       font-size: 4vh;
       text-align: center;
   }
-  /* O toggle e section agora ocupam quase toda a largura */
   .toggle,
   .section {
       width: 80%;
       margin: 10px auto;
   }
-  /* Remove os alinhamentos "left" e "right" definidos */
   .left,
   .right {
       margin: 0 auto;
   }
-  /* Ajusta o padding e tamanho do botão */
   .toggle {
     margin-top: 15px;
       padding: 10px 15px;
@@ -307,12 +296,11 @@
 /******************************/
 
   footer {
-    margin-top: 25%;
+    margin-top: 10%;
     z-index: 4;
   }
-
-  #footer-format {
-    margin-top: 20px;
+  .rodape-p {
+    font-size: 3.5vw;
   }
 }
 
@@ -320,11 +308,6 @@
   #titulo a{
     font-size: 40px;
   }
-
-#titulo {
-  flex-wrap: nowrap;
-  flex: 0.6;
-}
 
   #logo img {
     width: 50px;
@@ -337,7 +320,7 @@
   }
 
   #menuCores {
-    top: 43vh;
+    top: 41vh;
     width: 27vh;
   }
 

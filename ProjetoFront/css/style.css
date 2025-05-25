@@ -2,10 +2,8 @@
 /*  #59BDE8 --> CORPO DA PÁGINA
     #0CE899 --> COR DAS LETRAS
     #0C1BE8 --> CONTRASTE DAS LETRAS / NEGRITO
-
 */
 *{        
-    outline: 2px solid red; /* Teste para ver quais elementos estão causando problema */
     margin: 0%;
     padding: 0%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -24,7 +22,7 @@ html, body{
 
 body{
     box-sizing: border-box;
-    background-color: rgb(31, 29, 29); /* Cor inicial */ 
+    background-color: rgb(31, 29, 29);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -33,15 +31,14 @@ body{
 }
 
 #container-geral{
-    /* flex: 1; */
     width: 100%;
 }
 
 header{
     display: flex;
-    justify-content: space-between; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: nowrap; /* Ajusta para evitar quebra */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; 
     background-color: #0164b5;
     height: 85px;
     width: 100%;
@@ -74,8 +71,8 @@ header{
     color: #fff;
     transition: 0.8s;
     flex: 1;
-    flex-grow: 1; /* Permite que ele ocupe o espaço necessário */
-    text-align: center; /* Garante que o texto do link fique centralizado */
+    flex-grow: 1;
+    text-align: center;
 
 }
 
@@ -150,6 +147,8 @@ main{
     color: #ffffff;
     flex: 1;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /******************************/
@@ -179,13 +178,13 @@ main{
     float: left;
     display: block;
     list-style: none;
-    
 }
 
 #menuNav a{
     text-decoration: none;
     color: #e4e4e4;
     transition: 0.5s;
+    margin-left: 10px;
 }
 
 #menuNav a:hover{
@@ -232,7 +231,6 @@ main{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
     background-size: cover;
     height: 100%;
-    /* filter: drop-shadow(15px 20px 15px #0c0d0d); */
     transition: .2s;
     align-items: center;
     justify-content: center;
@@ -487,7 +485,7 @@ section {
     border-radius: 8px 8px 0 0;
     text-align: center;
     transition:0.5s;
-    width: 30%; /* Faz o botão ter o mesmo tamanho do section */
+    width: 30%;
     display: block;
 }
 
@@ -602,7 +600,7 @@ input:focus{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* funciona em vertical também */
+    justify-content: space-between;
     gap: 15px;
     
 }
@@ -681,37 +679,32 @@ button:disabled {
 /*      Página do Projeto      */
 /*******************************/
 
-
-
-
-
 #section-projeto p{
     padding-bottom: 1%;
 }
 
 #container-projeto{
-    width: 30%;
+    display: flex;
+    width: 100%;
     margin-top: 100px;
-    padding-left: 30%;
     justify-content: center;
     padding-bottom: 20px;
-
-}
-
-
-
-
-#container-projeto {
     display: flex;
     align-items: center; 
     gap: 10px; 
+}
+
+#formularioProjeto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 input {
     border: 0;
     border-bottom: 2px solid rgba(0, 17, 255, 0.817);
     border-radius: 5px 5px 0 0;
-    width: 400px;
+    width: 90%;
     padding: 5px;
     margin-top: 10px;
     background-color: #f5f5f593;
@@ -721,6 +714,9 @@ input[type="radio"] {
     width: auto;
 }
 
+.genRadio {
+    margin: 2% 5px;
+}
 
 ::placeholder {
     color: #121212b4;
@@ -731,12 +727,12 @@ input[type="radio"] {
     background-color: #35375181;
     border: 4px solid rgba(0, 17, 255, 0.817);
     padding: 2%;
-    width: 500px;
+    width: 65%;
 
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* funciona em vertical também */
+    justify-content: space-between;
     gap: 15px;
     
 }
@@ -761,7 +757,6 @@ placeholder{
     border-radius: 5px;
     border: solid 2px #000000;
     font-size: 20px;
-    margin-left: 60px;
 }
 
 .button-projeto:hover {
@@ -784,6 +779,7 @@ placeholder{
 
 
 footer {
+    display: flex;
     background-color: #0076b5;
     color: rgb(53, 157, 249);
     height: 23px;
@@ -791,6 +787,9 @@ footer {
     color: #000000;
     margin-top: auto;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #footer-format {
@@ -798,10 +797,9 @@ footer {
   }
 
 .rodape{
-    padding-top: 2px;
-    padding-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 3px;
     text-align: center;
-    font-size: 13px;
 }
 
 .rodape-p {
